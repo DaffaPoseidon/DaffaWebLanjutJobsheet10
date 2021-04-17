@@ -25,3 +25,4 @@ Route::resource('mahasiswa', MahasiswaController::class);
 // Route::get('ind', [MahasiswaController::class,'index']);
 Route::get('mahasiswa/nilai/{nim}', [MahasiswaController::class, 'show_khs'])->name('mahasiswa.khs');
 Route::resource('articles', ArticleController::class);
+Route::get('/article/cetak_pdf',[ArticleController::class,'cetak_pdf'])->name('cetak_pdf');
